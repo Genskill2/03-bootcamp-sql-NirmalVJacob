@@ -14,5 +14,5 @@ create table subjects(
   name text);
 
 create table books_subjects(
-  book integer refernces subjects(id) ,
+  book integer references publisher(id) ,
   subject integer references subjects(id));
