@@ -1,4 +1,4 @@
--- CREATE TABLES --
+-- CREATE TABLES
 create table publisher(
   id integer primary key,
   name text ,
@@ -14,5 +14,5 @@ create table subjects(
   name text);
 
 create table books_subjects(
-  book integer references publisher(id) ,
+  book integer references books(id),
   subject integer references subjects(id));
